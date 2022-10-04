@@ -7,15 +7,15 @@
   home.homeDirectory = "/home/ben";
 
   home.packages = [
-       #kubernetes
-	pkgs.k9s #a very good boy
-  	pkgs.kubectl #kube cuddle
-	pkgs.krew #package manager for kubectl plugins
-	pkgs.devspace # REALLY useful for developing inside a live kube cluster without having to build and upload a container image first
+  # kubernetes
+	pkgs.k9s 
+  pkgs.kubectl 
+	pkgs.krew 
+	pkgs.devspace
 
-	#languages
-	pkgs.go #GO!
-	pkgs.rustup #RUST
+	# programming languages
+	pkgs.go
+	pkgs.rustup
 
 	# development tools
 	pkgs.helix # my favourite CLI editor, but no plugin system yet so I use neovim more often. 
@@ -25,13 +25,13 @@
 	pkgs.lima
 
 	# charm.sh tools
-        pkgs.gum
+  pkgs.gum
 	pkgs.glow
 	pkgs.skate
-        pkgs.soft-serve
+  pkgs.soft-serve
 
 	# general tools
-        pkgs.tmux
+  pkgs.tmux
 	pkgs.slack
 	pkgs.starship #multi-shell customizable prompt
 	pkgs.exa #more modern 'ls'
@@ -42,10 +42,10 @@
 	pkgs.broot # like 'tree' but better, respects .gitignore in output and allows for navigation around filesystem.
 	pkgs.brave
 
-	#fun
+	# fun
 	pkgs.thefuck # type 'fuck' after making a typo on a shell command.
-	pkgs.spotifyd #spotify daemon, needed for spotify TUI
-	pkgs.spotify-tui #run spotify in the terminal, I only use this on Arch, not macOS
+	pkgs.spotifyd # spotify daemon, needed for spotify TUI
+	pkgs.spotify-tui # run spotify in the terminal, I only use this on Arch, not macOS
   ];
 
 
