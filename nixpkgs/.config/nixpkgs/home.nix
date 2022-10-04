@@ -18,7 +18,6 @@
 	pkgs.rustup #RUST
 
 	# development tools
-	pkgs.neovim # preffered cli editor
 	pkgs.helix # my favourite CLI editor, but no plugin system yet so I use neovim more often. 
 	pkgs.lazygit # a nice git TUI
 	pkgs.doctl # digital ocean cli, useful for throwaway cloud vms or cheap serverless functions.
