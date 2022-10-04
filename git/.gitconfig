@@ -1,0 +1,19 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[user]
+  name = Ben Onions
+  email = 114976511+BenOnions@users.noreply.github.com
+	signingkey = 6E3CD080DA9C2534
+
+[includeIf "gitdir:~/code/nep/"]
+	path = ~/code/nep/.gitconfig
+	
+[core]
+        autocrlf = input
+
+[url "https://BenOnions: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@github.com/BenOnions"]
+	insteadOf = https://github.com/BenOnions		
